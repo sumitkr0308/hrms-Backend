@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 4000;
 app.use(
   cors({
     origin: [
-      "https://hrms-frontend-l2dk.vercel.app", // your frontend domain
+      "https://mutantwork.vercel.app", //  frontend domain
       "http://localhost:5173"                  // for local testing
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
