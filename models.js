@@ -8,6 +8,12 @@ const { Schema } = mongoose;
 const SuperAdminSchema = new Schema({
   email: { type: String, required: true, unique: true, lowercase: true, trim: true },
   password: { type: String, required: true },
+  role: {
+    type: String,
+    required: true,
+    default: "superadmin" 
+  },
+
   createdAt: { type: Date, default: Date.now },
 });
 
